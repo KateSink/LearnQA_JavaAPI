@@ -9,10 +9,8 @@ public class parsingJson {
 
     @Test
     public void secondAnswer(){
-        Map <String, String> params = new HashMap<>();
 
         JsonPath response = RestAssured
-                .given()
                 .get("https://playground.learnqa.ru/api/get_json_homework")
                 .jsonPath();
 
